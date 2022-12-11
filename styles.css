@@ -1,0 +1,114 @@
+body{
+    align-items: center;
+    background-color: navy;
+    flex-direction: column;
+    display: flex;
+}
+
+.tile{
+    align-items: center;
+    display: flex;
+    font-size: 100px;
+    color: white;
+    justify-content: center;
+}
+
+#board{
+    position: relative;
+    display: grid;
+    cursor: pointer;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+}
+
+.bottom-border{
+    border-bottom: 0.2px solid paleturquoise;
+}
+.right-border{
+    border-right: 0.2px solid paleturquoise;
+}
+
+.strike{
+    position: absolute;
+    background-color: darkgray;
+}
+
+.strike-row-1{
+    height: 5px;
+    width: 100%;
+    top: 15%;
+}
+
+.strike-row-2{
+    height: 5px;
+    width: 100%;
+    top: 48%;
+}
+
+.strike-row-3{
+    height: 5px;
+    width: 100%;
+    top: 83%;
+}
+
+.strike-col-1{
+    width: 5px;
+    height: 100%;
+    left: 15%;
+}
+
+.strike-col-2{
+    width: 5px;
+    height: 100%;
+    left: 48%;
+}
+
+.strike-col-3{
+    width: 5px;
+    height: 100%;
+    left: 83%;
+}
+
+.strike-diagonal-1{
+    height: 5px;
+    width: 90%;
+    top: 50%;
+    left: 5%;
+    transform: skewY(45deg);
+}
+
+.strike-diagonal-2{
+    height: 5px;
+    width: 90%;
+    top: 50%;
+    left: 5%;
+    transform: skewY(-45deg);
+}
+
+h1{
+    color: white;
+}
+
+#game-over{
+    text-align: center;
+    width: 50%;
+    margin-top: 50px;
+    padding: 50px;
+    border: navy 8px solid;
+}
+
+h2{
+    font-size: 2px;
+    padding: 10px;
+    font-size: 1.5px;
+    color: paleturquoise;
+    border: navy 1px solid;
+}
+
+.visible{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
